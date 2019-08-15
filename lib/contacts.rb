@@ -15,6 +15,7 @@ require 'pry'
   # }
   
 def remove_strawberry(contacts)
-  delete contacts["Freddy Mercury"][:favorite_ice_cream_flavors][0]
-  contacts
+  contacts.each do |person, contact_details_hash|
+    binding.pry
+  end
 end
